@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jé Doce Momento | Alta Confeitaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<div class="glass-bg">
+    <div class="blob"></div>
+    <div class="blob"></div>
+</div>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logo1.png" alt="Jé Doce Momento">
+    </div>
+
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#sobre">Nossa Essência</a></li>
+            <li><a href="https://wa.me/5512988314698" class="btn-glass">Encomendar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-container">
+        <div class="hero-text">
+            <span class="eyebrow">Confeitaria Artesanal</span>
+            <h1>Onde a doçura encontra a <span>Arte.</span></h1>
+            <p>Doces que transformam momentos em lembranças inesquecíveis. Feitos com carinho, técnica e os melhores ingredientes.</p>
+            <div class="cta-group">
+                <a href="#menu" class="btn-main">Ver Cardápio</a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+            <div class="image-card">
+                <div class="image-inner">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80" alt="Bolo Gourmet">
+                </div>
+            </div>
+            <div class="circle-text">FEITO COM AMOR • ARTESANAL • </div>
+        </div>
+    </div>
+</section>
+<section class="about-section" id="sobre">
+    <div class="about-container">
+        <div class="about-content">
+            <span class="eyebrow">Nossa Essência</span>
+            <h2>Transformamos momentos simples em <span>memórias doces.</span></h2>
+            
+            <div class="about-text">
+                <p>Na <strong>Jé Doce Momento</strong>, tudo é feito com amor, ingredientes fresquinhos e aquele toque caseiro que aquece o coração.</p>
+                <p>Não é apenas sobre sabor é sobre acolher, celebrar e adoçar o dia de quem amamos. Do preparo ao cheirinho saindo do forno, colocamos dedicação em cada detalhe para que você sinta o carinho em cada pedaço.</p>
+                <blockquote>
+                    "Porque a vida é feita de instantes... e cada instante merece ser um doce momento."
+                </blockquote>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="sobre.png" alt="Doces Artesanais Jé Doce Momento">
+        </div>
+    </div>
+</section>
+<section class="menu-section" id="menu">
+    <div class="section-title">
+        <span class="eyebrow">Nossas Delícias</span>
+        <h2>Coleções Exclusivas</h2>
+    </div>
+
+    <div class="tab-container">
+        <div class="tab-buttons category-grid">
+    <div class="category-card active" onclick="openTab(event, 'caseiros')">
+        <div class="category-img">
+            <img src="Bolo-sem-cobertura.png" alt="Bolos Tradicionais">
+        </div>
+        <span>Bolos Caseiros Tradicionais</span>
+    </div>
+
+    <div class="category-card" onclick="openTab(event, 'cobertura')">
+        <div class="category-img">
+            <img src="Bolo-cobertura.png" alt="Bolos com Cobertura">
+        </div>
+        <span>Bolos com Cobertura</span>
+    </div>
+
+    <div class="category-card" onclick="openTab(event, 'docinhos')">
+        <div class="category-img">
+            <img src="Docinhos.png" alt="Docinhos">
+        </div>
+        <span>Docinhos</span>
+    </div>
+</div>
+
+        <div id="caseiros" class="tab-content active">
+            <p class="tab-desc">Bolos de 20cm, sabor de casa para momentos inesquecíveis.</p>
+            <div class="product-grid">
+                <div class="product-card"><h3>Fubá / Formigueiro</h3><p>Tradicionais e fofinhos</p><span class="price">R$ 25,00</span></div>
+                <div class="product-card"><h3>Cenoura / Chocolate</h3><p>O clássico preferido</p><span class="price">R$ 27,00</span></div>
+                <div class="product-card"><h3>Laranja / Mesclado</h3><p>Sabor cítrico e suave</p><span class="price">R$ 27,00</span></div>
+            </div>
+        </div>
+
+        <div id="cobertura" class="tab-content">
+            <p class="tab-desc">Bolos de 20cm com coberturas generosas e artesanais.</p>
+            <div class="product-grid">
+                <div class="product-card"><h3>Cenoura c/ Chocolate</h3><p>Cobertura gourmet</p><span class="price">R$ 45,00</span></div>
+                <div class="product-card"><h3>Fubá com Goiabada</h3><p>Combinação perfeita</p><span class="price">R$ 40,00</span></div>
+                <div class="product-card"><h3>Chocolate da Casa</h3><p>Intenso e cremoso</p><span class="price">R$ 45,00</span></div>
+            </div>
+        </div>
+
+        <div id="docinhos" class="tab-content">
+            <p class="tab-desc">Docinhos artesanais de 18g a 20g. Unidade: O Cento.</p>
+            <div class="product-grid">
+                <div class="product-card"><h3>Tradicionais</h3><p>Brigadeiro, Beijinho, Casadinho</p><span class="price">R$ 100,00</span></div>
+                <div class="product-card special"><h3>Ninho com Nutella</h3><p>A joia da casa (20g)</p><span class="price">R$ 120,00</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalog-frame">
+    <img src="Bolo-cobertura.png" class="frame-img side-left" alt="">
+    <img src="Docinhos.png" class="frame-img side-right" alt="">
+
+    <div class="mini-catalog-card highlight-card">
+        <span class="eyebrow">Catálogo Completo</span>
+        <h4>Pedidos Exclusivos</h4>
+        <p>Explore nossas opções artesanais e reserve seu doce momento via WhatsApp.</p>
+        <a href="https://wa.me/c/5512988314698" target="_blank" class="btn-catalog">Acessar Catálogo →</a>
+    </div>
+</section>
+
+
+<script>
+
+    // Seletores para o menu mobile
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    // Abre/Fecha menu ao clicar no hamburguer
+    menu.addEventListener('click', function() {
+        menu.classList.toggle('is-active');
+        menuLinks.classList.toggle('active');
+    });
+
+    // Fecha o menu ao clicar em qualquer link (Início ou Cardápio)
+    navItems.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('is-active');
+            menuLinks.classList.remove('active');
+        });
+    });
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) { tabcontent[i].style.display = "none"; tabcontent[i].classList.remove("active"); }
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+        document.getElementById(tabName).style.display = "block";
+        setTimeout(() => { document.getElementById(tabName).classList.add("active"); }, 50);
+        evt.currentTarget.className += " active";
+    }
+    
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.navbar');
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+</script>
+
+<a href="https://wa.me/5512988314698" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 32 32" class="whatsapp-icon">
+        <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.017 7.783l-2.017 7.37 7.54-1.981c2.251 1.189 4.814 1.861 7.46 1.861 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.433 0-4.707-0.643-6.666-1.766l-0.478-0.273-4.407 1.157 1.178-4.307-0.3-0.477c-1.229-1.947-1.944-4.263-1.944-6.743 0-7.363 5.989-13.352 13.352-13.352s13.352 5.989 13.352 13.352c0 7.363-5.989 13.352-13.352 13.352zM22.564 19.143c-0.361-0.181-2.136-1.054-2.467-1.174-0.331-0.12-0.571-0.181-0.811 0.181s-0.932 1.174-1.143 1.414c-0.211 0.241-0.421 0.271-0.782 0.090-0.361-0.181-1.524-0.562-2.903-1.792-1.073-0.957-1.798-2.139-2.008-2.5-0.211-0.361-0.022-0.556 0.158-0.736 0.163-0.162 0.361-0.421 0.541-0.632 0.181-0.211 0.241-0.361 0.361-0.602s0.060-0.451-0.030-0.632c-0.090-0.181-0.811-1.956-1.112-2.678-0.293-0.706-0.591-0.611-0.811-0.622-0.211-0.011-0.451-0.011-0.692-0.011s-0.632 0.090-0.962 0.451c-0.331 0.361-1.263 1.234-1.263 3.009s1.294 3.489 1.474 3.73c0.181 0.241 2.546 3.887 6.168 5.451 0.862 0.372 1.535 0.594 2.060 0.761 0.866 0.275 1.655 0.236 2.278 0.143 0.695-0.104 2.136-0.872 2.437-1.715s0.301-1.565 0.211-1.715c-0.090-0.15-0.331-0.241-0.692-0.421z"></path>
+    </svg>
+</a>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="logo1.png" alt="Jé Doce Momento" class="footer-logo">
+            <p>Transformando momentos simples em memórias doces com o melhor da confeitaria artesanal.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#sobre">Nossa Essência</a></li>
+                <li><a href="https://wa.me/c/5512988314698" target="_blank">Catálogo Digital</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Jé Doce Momento. Todos os direitos reservados.</p>
+        <p class="developer">Desenvolvido com ❤️</p>
+    </div>
+</footer>
+</body>
+</html>
